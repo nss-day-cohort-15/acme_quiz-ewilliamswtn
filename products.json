@@ -1,0 +1,112 @@
+{
+    "products": [{
+        "m80": {
+            "id": 0,
+            "type": 0,
+            "name": "M-80",
+            "description": "Small hand held firework.  Throw quickly"
+        },
+        "firecracker": {
+            "id": 1,
+            "type": 0,
+            "name": "Firecracker",
+            "description": "Generic hand held firework.  Watch your fingers"
+        },
+        "black_cat": {
+            "id": 2,
+            "type": 0,
+            "name": "Black Cat",
+            "description": "Larger version of the firecracker."
+        },
+        "bees": {
+            "id": 3,
+            "type": 1,
+            "name": "Killer Bees",
+            "description": "Stationary; shoots a fountain of fireworks upwards. Very loud"
+        },
+        "roman_candle": {
+            "id": 4,
+            "type": 1,
+            "name": "Roman Candle",
+            "description": "A cardboard tube that launches colorful fire."
+        },
+          "comet": {
+            "id": 5,
+            "type": 1,
+            "name": "comet",
+            "description": "."
+        },
+        "butterfly": {
+            "id": 6,
+            "type": 2,
+            "name": "Butterfly",
+            "description": "Ejects two cones in opposite direction, create a symmetrical butterfly effect."
+        },
+        "dragon_egg": {
+            "id": 7,
+            "type": 2,
+            "name": "Dragon Egg",
+            "description": "Launches into the air, leaves a streaming crackling, strobing effect."
+        },
+        "shell": {
+            "id": 8,
+            "type": 2,
+            "name": "Aerial Shell",
+            "description": "Shell launched from a mortar."
+        },
+        "blasting_cap": {
+            "id": 9,
+            "type": 3,
+            "name": "Blasting Cap",
+            "description": "Small contact explosive. Typically used to detonate other explosives."
+        },
+        "potassium_chlorate": {
+            "id": 10,
+            "type": 3,
+            "name": "Potassium Chlorate",
+            "description": "Oxidizing agent, similar to gunpowder."
+        },
+        "tannerite": {
+            "id": 11,
+            "type": 3,
+            "name": "Tannerite",
+            "description": "Brand name binary explosive, typically used for exploding target practice targets."
+        },
+        "c4": {
+            "id": 12,
+            "type": 4,
+            "name": "C-4",
+            "description": "A plastic explosive, with clay-like texture."
+        },
+        "carbonite": {
+            "id": 13,
+            "type": 4,
+            "name": "Carbonite",
+            "description": "Explosive typically used in coal mining."
+        },
+        "dynamite": {
+            "id": 14,
+            "type": 4,
+            "name": "Dynamite",
+            "description": "Nitroglycerine based explosive."
+        },
+          "hfire": {
+            "id": 15,
+            "type": 5,
+            "name": "Hellfire",
+            "description": "Anti-armor missile."
+        },
+        "mini_nuke": {
+            "id": 16,
+            "type": 5,
+            "name": "Mini-Nuke",
+            "description": "Football sized tactical warhead."
+        },
+        "nuke": {
+            "id": 17,
+            "type": 5,
+            "name": "Nuke",
+            "description": "Nuclear missile.  Illegal in Can"
+        }
+    }]
+}

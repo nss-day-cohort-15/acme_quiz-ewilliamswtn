@@ -1,0 +1,40 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "category": 0,
+            "name": "Personal: Small",
+            "description": "Smaller recreational fireworks"
+        },
+        {
+            "id": 1,
+            "category": 0,
+            "name": "Personal: Medium",
+            "description": "Medium recreational fireworks"
+        },
+        {
+            "id": 2,
+            "category": 0,
+            "name": "Personal: Large",
+            "description": "Large recreational fireworks"
+        },
+        {
+            "id": 3,
+            "category": 1,
+            "name": "Industrial: Small",
+            "description": "Serious explosives intended for smaller issues"
+        },
+        {
+            "id": 4,
+            "category": 1,
+            "name": "Industrial: Medium",
+            "description": "Serious explosives with a moderate blast radius"
+        },
+        {
+            "id": 5,
+            "category": 1,
+            "name": "Industrial: Large",
+            "description": "Explosives to use when you're not concerned with collateral damage"
+        }      
+    ]
+}
