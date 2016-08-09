@@ -1,5 +1,6 @@
 {
-    "products": [{
+    "products": 
+        {
         "m80": {
             "id": 0,
             "type": 0,
@@ -108,5 +109,5 @@
             "name": "Nuke",
             "description": "Nuclear missile.  Illegal in Can"
         }
-    }]
+    }
 }
