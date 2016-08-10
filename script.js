@@ -1,4 +1,5 @@
 // use this template??
+
 // $.getJSON("categories.json")
 //   .then(function (data) {
 //     //returns an {}
@@ -15,85 +16,83 @@
 //   .then(function(products) {
     
 //   })
-
-//on page load, could use these for category dropdown buttons...
-//if i have time T.T
-
-  // $.getJSON("categories.json")
-  //   .then(function (data) {
-  //     $.each(data.categories, function (index, thing) {
-  //       console.log(thing.name)
-  //     })
-  //   })
+//
 
 
-$( "#fwButton" ).click(function() {
-  $("#divLord").html("");
-  $("#selectCat").html("");
-  $.getJSON("types.json")
+$.getJSON("categories.json")
   .then(function (data) {
-    $("#divLord").append("<div class='col-xs-3 lolDynamicLabel spacer'>Type:</div>");
-    $.each(data.types, function (index, thing) {
-      if (thing.category === 0) {
-        $("#divLord").append("<div class='col-xs-3 lolDynamicType'>" + thing.name + "</div>");
-      }
-    })
-  })
-  .then(function (){
-    $.getJSON("products.json")
-    .then(function (data) {
-      var counter = 0;
-      $("#divLord").append("<div class='col-xs-12 lolDynamicLabel'>Products:</div>");
-      $.each(data.products, function (index, thing) {
-        if (thing.type === 0 || thing.type === 1 ||thing.type === 2) {
-          if (counter % 3 === 0) {
-            $("#divLord").append("<div class='col-xs-3 lolDynamicSpacer'></div>");
-          }
-          $("#divLord").append("<div class='col-xs-3 lolDynamicDiv'>" + thing.name + "</div>");
-          counter++;
+    $.each(data.categories, function (index, thing) {
+      $("#dynamicButtons").append("<li><a href='#'' id=" + thing.name + "button>" + thing.name + "</a></li>");
+      $( "#" + thing.name + "button").click(function() {
+        if ($(this).attr("id") == "Fireworksbutton") {
+          $("#divLord").html("");
+            $("#select0r").hide();
+            $.getJSON("types.json")
+            .then(function (data) {
+              $("#divLord").append("<div class='col-xs-3 lolDynamicLabel spacer'>Type:</div>");
+              $.each(data.types, function (index, thing) {
+                if (thing.category === 0) {
+                  $("#divLord").append("<div class='col-xs-3 lolDynamicType'>" + thing.name + "</div>");
+                }
+              })
+            })
+            .then(function (){
+              $.getJSON("products.json")
+              .then(function (data) {
+                var counter = 0;
+                $("#divLord").append("<div class='col-xs-12 lolDynamicLabel'>Products:</div>");
+                $.each(data.products, function (index, thing) {
+                  if (thing.type === 0 || thing.type === 1 ||thing.type === 2) {
+                    if (counter % 3 === 0) {
+                      $("#divLord").append("<div class='col-xs-3 lolDynamicSpacer'></div>");
+                    }
+                    $("#divLord").append("<div class='col-xs-3 lolDynamicDiv'>" + thing.name + "</div>");
+                    counter++;
+                  }
+                })
+              })
+            })
+        } else if ($(this).attr("id") == "Demolitionbutton") {
+          $("#divLord").html("");
+          $("#select0r").hide();
+          $.getJSON("types.json")
+          .then(function (data) {
+            $("#divLord").append("<div class='col-xs-3 lolDynamicLabel spacer'>Type:</div>");
+            $.each(data.types, function (index, thing) {
+              if (thing.category === 1) {
+                $("#divLord").append("<div class='col-xs-3 lolDynamicType'>" + thing.name + "</div>");
+              }
+            })
+          })
+            .then(function (){
+              $.getJSON("products.json")
+                .then(function (data) {
+                  var counter = 0;
+                  $("#divLord").append("<div class='col-xs-12 lolDynamicLabel'>Products:</div>");
+                  $.each(data.products, function (index, thing) {
+                  if (thing.type === 3 || thing.type === 4 ||thing.type === 5) {
+                    if (counter % 3 === 0) {
+                      $("#divLord").append("<div class='col-xs-3 lolDynamicSpacer'></div>");
+                    }
+                    $("#divLord").append("<div class='col-xs-3 lolDynamicDiv'>" + thing.name + "</div>");
+                    counter++;
+                }
+              })
+            })
+          }) 
         }
-      })
+      });
     })
   })
-});
-
-///
-
-$( "#demoButton" ).click(function() {
-  $("#divLord").html("");
-  $("#selectCat").html("");
-  $.getJSON("types.json")
-  .then(function (data) {
-    $("#divLord").append("<div class='col-xs-3 lolDynamicLabel spacer'>Type:</div>");
-    $.each(data.types, function (index, thing) {
-      if (thing.category === 1) {
-        $("#divLord").append("<div class='col-xs-3 lolDynamicType'>" + thing.name + "</div>");
-      }
-    })
-  })
-    .then(function (){
-      $.getJSON("products.json")
-        .then(function (data) {
-          var counter = 0;
-          $("#divLord").append("<div class='col-xs-12 lolDynamicLabel'>Products:</div>");
-          $.each(data.products, function (index, thing) {
-          if (thing.type === 3 || thing.type === 4 ||thing.type === 5) {
-            if (counter % 3 === 0) {
-              $("#divLord").append("<div class='col-xs-3 lolDynamicSpacer'></div>");
-            }
-            $("#divLord").append("<div class='col-xs-3 lolDynamicDiv'>" + thing.name + "</div>");
-            counter++;
-        }
-      })
-    })
-  })
-});
 
 
 
 
 
 
+
+
+ 
 
 
 
@@ -108,7 +107,50 @@ $( "#demoButton" ).click(function() {
 //old code, feel free to ignore
 
 
+      // $("#divLord").html("");
+       //  $("#select0r").hide();
+       //  $.getJSON("types.json")
+       //  .then(function (data) {
+       //    $("#divLord").append("<div class='col-xs-3 lolDynamicLabel spacer'>Type:</div>");
+       //    $.each(data.types, function (index, thing) {
+       //      if (thing.category === 0) {
+       //        $("#divLord").append("<div class='col-xs-3 lolDynamicType'>" + thing.name + "</div>");
+       //      }
+       //    })
+       //  })
+       //  .then(function (){
+       //    $.getJSON("products.json")
+       //    .then(function (data) {
+       //      var counter = 0;
+       //      $("#divLord").append("<div class='col-xs-12 lolDynamicLabel'>Products:</div>");
+       //      $.each(data.products, function (index, thing) {
+       //        if (thing.type === 0 || thing.type === 1 ||thing.type === 2) {
+       //          if (counter % 3 === 0) {
+       //            $("#divLord").append("<div class='col-xs-3 lolDynamicSpacer'></div>");
+       //          }
+       //          $("#divLord").append("<div class='col-xs-3 lolDynamicDiv'>" + thing.name + "</div>");
+       //          counter++;
+       //        }
+       //      })
+       //    })
+       //  })
 
+
+
+
+
+// $( "#fwButton" ).click(function() {
+  
+// });
+
+// ///
+
+
+
+
+// $( "#demoButton" ).click(function() {
+  
+// });
 
 // $( "#testButton" ).click(function() {
 //     //types

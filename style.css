@@ -15,8 +15,9 @@
 }
 
 .lolDynamicDiv {
-  font-size: 1.25em
-  margin-top: 10px;
+  font-size: 1.25em;
+  margin-top: 15px;
   padding-right: 15px;
   border-left: solid thin black;
+  border-bottom: solid thin #ddd;
 }
