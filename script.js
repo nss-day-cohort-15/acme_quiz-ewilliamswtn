@@ -14,7 +14,7 @@
 //     return $.getJSON("products.json")
 //   })
 //   .then(function(products) {
-    
+
 //   })
 //
 
@@ -79,7 +79,7 @@ $.getJSON("categories.json")
                 }
               })
             })
-          }) 
+          })
         }
       });
     })
@@ -92,7 +92,7 @@ $.getJSON("categories.json")
 
 
 
- 
+
 
 
 
@@ -140,7 +140,7 @@ $.getJSON("categories.json")
 
 
 // $( "#fwButton" ).click(function() {
-  
+
 // });
 
 // ///
@@ -149,7 +149,7 @@ $.getJSON("categories.json")
 
 
 // $( "#demoButton" ).click(function() {
-  
+
 // });
 
 // $( "#testButton" ).click(function() {
@@ -168,14 +168,13 @@ $.getJSON("categories.json")
 //       // console.log("key ->", item)
 //       // console.log("value ->", data.products[item])
 //       // console.log("name ->", data.products[item].name)
-      
+
 //     // }
 //     $.each(data.products, function (index,thing) {
 //      // console.log(thing.type);
 //      // console.log(thing.name);
 //       $("#divLord").append("<div class='col-xs-3 lolDynamic'>" + thing.name + "</div>");
 
-      
 //     })
 //   })
 // });
@@ -190,7 +189,7 @@ $.getJSON("categories.json")
 
 // $( "#fwButton" ).click(function() {
 //   $.getJSON("categories.json").then(function (data) {
-//     $("#output").text(data.categories[0].name) 
+//     $("#output").text(data.categories[0].name)
 // }).then(function() {
 //   $.getJSON("types.json").then(function (data) {
 //     $("#typesLabel1").text(data.types[0].name)
@@ -216,15 +215,15 @@ $.getJSON("categories.json")
 
 //         $("#t3p2").text(data.products[0].dragon_egg.name)
 
-//         $("#t3p3").text(data.products[0].shell.name)                  
-//       })                      
+//         $("#t3p3").text(data.products[0].shell.name)
+//       })
 //     })
 //   })
 // });
 
 // $( "#demoButton" ).click(function() {
 //  $.getJSON("categories.json").then(function (data) {
-//     $("#output").text(data.categories[1].name) 
+//     $("#output").text(data.categories[1].name)
 //   }).then(function() {
 //     $.getJSON("types.json").then(function (data) {
 //       $("#typesLabel1").text(data.types[3].name)
@@ -250,13 +249,11 @@ $.getJSON("categories.json")
 
 //         $("#t3p2").text(data.products[0].mini_nuke.name)
 
-//         $("#t3p3").text(data.products[0].nuke.name)                  
-//       })                      
+//         $("#t3p3").text(data.products[0].nuke.name)
+//       })
 //     })
 //   })
 // });
-
-
 
 
 
@@ -306,8 +303,3 @@ $.getJSON("categories.json")
 // //    });
 // //   });
 // // });
-
-
-
-
-
